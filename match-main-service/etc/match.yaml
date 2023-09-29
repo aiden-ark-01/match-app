@@ -1,0 +1,19 @@
+ProjectName: match
+Http:
+HttpPort: 4567
+HttpCompress: false
+MySql: 192.168.1.22
+#MySql: ec2-3-27-120-189.ap-southeast-2.compute.amazonaws.com
+#MySqlPasswd: W10101
+#MySqlDB: ""
+MySqlDB: "match_system"
+#MySqlDB: "Admins"
+Redis: 192.168.1.22
+#Redis: 192.168.1.22
+#Redis: ec2-3-27-120-189.ap-southeast-2.compute.amazonaws.com
+RedisPort: 6379
+#RedisPwd: "Root1234"
+RedisPwd: ""
+RedisDB: 0
+RedisPoolMax: 1024
+

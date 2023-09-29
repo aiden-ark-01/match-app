@@ -1,0 +1,14 @@
+{
+  "name": "match-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "onlyDelete.js",
+  "scripts": {
+    "d:s": "node onlyDelete.js",
+    "run:i": "node run.js",
+    "d:key":"node delete_key.js",
+    "run:key":"node key.js"
+  },
+  "author": "",
+  "license": "ISC"
+}

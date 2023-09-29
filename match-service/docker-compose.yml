@@ -1,0 +1,13 @@
+version: '3.7'
+
+services:
+  match-service:
+    image: match-service
+    ports:
+      - "3000:3000"
+    secrets:
+      - nest-match-object
+
+secrets:
+  nest-match-object:
+    external: true

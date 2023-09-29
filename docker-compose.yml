@@ -1,0 +1,39 @@
+version: '3.7'
+
+services:
+  match-web:
+    image: match-web
+    deploy:
+      replicas: 1
+    networks:
+      - matchnetwork
+    ports:
+      - "80:80"
+
+  match-service:
+    image: match-service
+    deploy:
+      replicas: 1
+    networks:
+      - matchnetwork
+    ports:
+      - "3000:3000"
+    secrets:
+      - nest-match-object
+
+  match-main-service:
+    image: match-main-service
+    deploy:
+      replicas: 1
+    networks:
+      - matchnetwork
+    ports:
+      - "4567:4567"
+
+secrets:
+  nest-match-object:
+    external: true
+
+networks:
+  matchnetwork:
+    external: true
